@@ -11,11 +11,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white text-black p-4">
+    <nav className="bg-zinc-200 text-black p-4">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-
         {/* Logo and Toggle Icon (for mobile) */}
-        <div className="flex items-center w-full justify-between md:w-auto">
+        <div className="flex items-center justify-between w-full md:w-auto">
           <img src="/path/to/your/logo.png" alt="Logo" className="h-10" />
           {/* Toggle Icon for Mobile */}
           <button className="text-black md:hidden" onClick={toggleMobileMenu}>
@@ -32,26 +31,26 @@ const Navbar = () => {
         </div>
 
         {/* Navigation Links */}
-        <div className={`md:flex ${showMobileMenu ? 'block' : 'hidden'} w-full md:w-auto`}>
-          <a href="#" className="block md:inline-block text-black hover:text-gray-700 py-2 px-4">
+        <div className={`md:flex ${showMobileMenu ? 'block' : 'hidden'} w-full md:w-auto mt-4 md:mt-0 md:space-x-4`}>
+          <a href="#" className="block md:inline-block text-black hover:text-green-600 hover:bg-gray-300 transition-colors duration-300 py-2 px-4 rounded">
             Women
           </a>
-          <a href="#" className="block md:inline-block text-black hover:text-gray-700 py-2 px-4">
+          <a href="#" className="block md:inline-block text-black hover:text-green-600 hover:bg-gray-300 transition-colors duration-300 py-2 px-4 rounded">
             Men
           </a>
-          <a href="#" className="block md:inline-block text-black hover:text-gray-700 py-2 px-4">
+          <a href="#" className="block md:inline-block text-black hover:text-green-600 hover:bg-gray-300 transition-colors duration-300 py-2 px-4 rounded">
             Kids
           </a>
-          <a href="#" className="block md:inline-block text-black hover:text-gray-700 py-2 px-4">
+          <a href="#" className="block md:inline-block text-black hover:text-green-600 hover:bg-gray-300 transition-colors duration-300 py-2 px-4 rounded">
             Accessories
           </a>
-          <a href="#" className="block md:inline-block text-black hover:text-gray-700 py-2 px-4">
+          <a href="#" className="block md:inline-block text-black hover:text-green-600 hover:bg-gray-300 transition-colors duration-300 py-2 px-4 rounded">
             Sports
           </a>
-          <a href="#" className="block md:inline-block text-black hover:text-gray-700 py-2 px-4">
+          <a href="#" className="block md:inline-block text-black hover:text-green-600 hover:bg-gray-300 transition-colors duration-300 py-2 px-4 rounded">
             Sale
           </a>
-          <a href="#" className="block md:inline-block text-black hover:text-gray-700 py-2 px-4">
+          <a href="#" className="block md:inline-block text-black hover:text-green-600 hover:bg-gray-300 transition-colors duration-300 py-2 px-4 rounded">
             The Juice
           </a>
         </div>
@@ -63,10 +62,8 @@ const Navbar = () => {
 
         {/* Icons Section */}
         <div className="hidden md:flex items-center space-x-4">
-          {/* Heart Icon */}
-          <HeartIcon onClick={() => console.log('Heart icon clicked')} />
-          {/* Shopping Bag Icon */}
-          <ShoppingBagIcon onClick={() => console.log('Shopping bag icon clicked')} />
+          <HeartIcon />
+          <ShoppingBagIcon />
         </div>
       </div>
 
@@ -76,8 +73,8 @@ const Navbar = () => {
           <SearchBar />
         </div>
         <div className="flex items-center justify-center space-x-4 p-4">
-          <HeartIcon onClick={() => console.log('Heart icon clicked')} />
-          <ShoppingBagIcon onClick={() => console.log('Shopping bag icon clicked')} />
+          <HeartIcon />
+          <ShoppingBagIcon />
         </div>
       </div>
     </nav>
