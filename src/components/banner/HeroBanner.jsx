@@ -4,7 +4,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const HeroBanner = () => {
   return (
-    <div className="relative z-0">
+    <div className="relative z-0 mt-16 mb-5 ">
       <Carousel 
          autoPlay
          infiniteLoop

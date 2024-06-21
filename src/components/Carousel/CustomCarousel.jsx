@@ -15,7 +15,7 @@ const images = [
 const CustomCarousel = () => {
   return (
     
-    <div className="swiper-strip swiper-container-horizontal" style={{ paddingTop: '50px' }}>
+    <div className="swiper-strip swiper-container-horizontal mb-5" style={{ paddingTop: '50px' }}>
       <div className="swiper-wrapper" style={{ transform: 'translate3d(0px, 0px, 0px)', transitionDuration: '0ms' }}>
         <Carousel
           autoPlay
@@ -26,8 +26,7 @@ const CustomCarousel = () => {
           swipeable
           emulateTouch
           stopOnHover
-          className="w-full"
-        >
+          className="w-full">
           {images.map((image, index) => (
             <div key={index} className="swiper-slide" style={{ width: '100%', marginRight: '30px' }}>
               <img src={image} alt={`Slide ${index}`} className="w-full h-auto" />

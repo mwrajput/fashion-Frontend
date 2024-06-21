@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-zinc-100 text-black p-4">
+    <nav className="bg-zinc-100 text-black p-4 fixed top-0 left-0 right-0 z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo and Toggle Icon (for mobile) */}
         <div className="flex items-center justify-between w-full md:w-auto">
