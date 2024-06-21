@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import SearchBar from './SearchBar';
 import ShoppingBagIcon from './ShoppingBagIcon';
 import HeartIcon from './HeartIcon';
-import ThemeToggle from './ThemeToggle'; // Import ThemeToggle component
 
 const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -12,13 +11,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-zinc-200 text-black p-4">
+    <nav className="bg-zinc-100 text-black p-4">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        
         {/* Logo and Toggle Icon (for mobile) */}
         <div className="flex items-center justify-between w-full md:w-auto">
           <img src="/path/to/your/logo.png" alt="Logo" className="h-10" />
-          
           {/* Toggle Icon for Mobile */}
           <button className="text-black md:hidden" onClick={toggleMobileMenu}>
             <svg
@@ -31,8 +28,7 @@ const Navbar = () => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
-          
-          
+        </div>
 
         {/* Navigation Links */}
         <div className={`md:flex ${showMobileMenu ? 'block' : 'hidden'} w-full md:w-auto mt-4 md:mt-0 md:space-x-4`}>
@@ -68,13 +64,10 @@ const Navbar = () => {
         <div className="hidden md:flex items-center space-x-4">
           <HeartIcon />
           <ShoppingBagIcon />
-
-
-          {/* Theme Toggle for Desktop */}
-          {/* <div className="hidden md:flex items-center ml-auto">
-            <ThemeToggle />
-          </div> */}
         </div>
+
+        {/* Theme Toggle */}
+        {/* <ThemeToggle /> */}
       </div>
 
       {/* Search bar and icons for mobile */}
@@ -85,16 +78,10 @@ const Navbar = () => {
         <div className="flex items-center justify-center space-x-4 p-4">
           <HeartIcon />
           <ShoppingBagIcon />
-          
         </div>
-
-        </div>
-
-        {/* Theme Toggle for Mobile */}
-        {/* <div className="flex items-center justify-center">
+        {/* <div className="flex justify-center mt-4">
           <ThemeToggle />
         </div> */}
-        
       </div>
     </nav>
   );
