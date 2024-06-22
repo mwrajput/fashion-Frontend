@@ -7,7 +7,12 @@ import FooterLinks from './components/Footer/FooterLinks';
 import ForMen from './components/Header/ForMen';
 import HeadingBB from './components/Header/HeadingBB';
 import ImageSlider from './components/Imslider/ImageSlider';
+<<<<<<< Updated upstream
 import Strip from './components/StripImg/Strip';
+=======
+import ImgSliderMen from "./components/ImgSliderMen/ImgSliderMen"
+
+>>>>>>> Stashed changes
 const App = () => {
   return (
     <>
@@ -24,6 +29,10 @@ const App = () => {
                   <Strip />
                   <HeadingBB />
                   <ImageSlider />
+                  {/* <ForMen props ="Men" /> */}
+                  <ForMen data= "Men" />
+                  <HeadingBB />
+                  <ImgSliderMen />
           </div>
         
         </main>
