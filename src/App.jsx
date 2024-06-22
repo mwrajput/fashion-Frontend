@@ -7,7 +7,7 @@ import FooterLinks from './components/Footer/FooterLinks';
 import ForMen from './components/Header/ForMen';
 import HeadingBB from './components/Header/HeadingBB';
 import ImageSlider from './components/Imslider/ImageSlider';
-
+import Strip from './components/StripImg/Strip';
 const App = () => {
   return (
     <>
@@ -17,10 +17,11 @@ const App = () => {
       </header>
 
       <main>
-          <div className="container mx-auto px-15">
+          <div className="container mb-14 mt-14 px-15">
                   <CustomCarousel />
                   <AddvertisePIc /> 
                   <ForMen />
+                  <Strip />
                   <HeadingBB />
                   <ImageSlider />
           </div>
