@@ -1,12 +1,12 @@
 import React from 'react';
-import backgroundImage from '../../assets/b2.jpg'; // Ensure this path is correct
+// import backgroundImage from '../../assets/b2.jpg'; 
 
 const AddvertisePIc = () => {
   return (
     <section 
       id="banner" 
-      className="flex flex-col items-center justify-center text-center bg-cover bg-center mt-16 mb-20 w-full h-96"
-      style={{ backgroundImage: `url(${backgroundImage})` }}
+      className="flex flex-col items-center justify-center text-center bg-cover bg-center mt-16 mb-20 w-full h-96 bg-zinc-600"
+      // style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <h4 className="text-lg font-semibold text-white mt-10">Fashion Point</h4>
       <h2 className="text-2xl font-bold text-white mt-2">

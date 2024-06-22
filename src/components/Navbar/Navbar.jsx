@@ -42,16 +42,13 @@ const Navbar = () => {
             Kids
           </a>
           <a href="#" className="block md:inline-block text-black hover:text-green-600 hover:bg-gray-300 transition-colors duration-300 py-2 px-4 rounded">
-            Accessories
-          </a>
-          <a href="#" className="block md:inline-block text-black hover:text-green-600 hover:bg-gray-300 transition-colors duration-300 py-2 px-4 rounded">
             Sports
           </a>
           <a href="#" className="block md:inline-block text-black hover:text-green-600 hover:bg-gray-300 transition-colors duration-300 py-2 px-4 rounded">
-            Sale
+            About Us
           </a>
           <a href="#" className="block md:inline-block text-black hover:text-green-600 hover:bg-gray-300 transition-colors duration-300 py-2 px-4 rounded">
-            The Juice
+            Contact Us
           </a>
         </div>
 

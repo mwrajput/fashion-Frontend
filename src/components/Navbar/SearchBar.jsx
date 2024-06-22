@@ -13,7 +13,7 @@ const SearchBar = () => {
       <input
         type="text"
         placeholder="Search..."
-        className="px-3 py-2 rounded-md outline-none bg-gray-700 text-white  placeholder-white"
+        className="px-3 py-2 rounded-md outline-none bg-gray-200 text-black border-black placeholder-black"
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
       />
