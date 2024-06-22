@@ -6,7 +6,7 @@ import AddvertisePIc from './components/banner/AddvertisePIc';
 import FooterLinks from './components/Footer/FooterLinks';
 import ForMen from './components/Header/ForMen';
 import HeadingBB from './components/Header/HeadingBB';
-import ProductOption from './components/Imslider/ProductOption';
+import ImageSlider from './components/Imslider/ImageSlider';
 
 const App = () => {
   return (
@@ -22,7 +22,7 @@ const App = () => {
                   <AddvertisePIc /> 
                   <ForMen />
                   <HeadingBB />
-                  <ProductOption/>
+                  <ImageSlider />
           </div>
         
         </main>
