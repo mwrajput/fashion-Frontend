@@ -1,4 +1,3 @@
-// src/components/FooterLinks.jsx
 import React from 'react';
 
 const FooterLinks = () => {
@@ -36,9 +35,19 @@ const FooterLinks = () => {
             <li className="mb-2">Xyz street abc Road</li>
             <li className="mb-2">(Near) City, Country</li>
           </ul>
+
+          {/* Additional Section */}
+          <h4 className="font-bold mt-8 mb-4 text-yellow-500 text-xl">DOWNLOAD THE APP</h4>
+          <div className="flex">
+            <a href="#" className="mr-4">
+              <img className="w-24 h-auto" src="https://www.beyoung.in/api/catalog/footer/11Play-Store-footer.png" alt="android app" />
+            </a>
+            <a href="#">
+              <img className="w-24 h-auto" src="https://www.beyoung.in/api/catalog/footer/12App-Store-footer.png" alt="ios app" />
+            </a>
+          </div>
         </div>
       </div>
-      <hr className="border-white my-8" />
     </div>
   );
 };

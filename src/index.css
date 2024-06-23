@@ -1,5 +1,6 @@
 /* @import 'swiper/swiper-bundle.min.css'; */
 @import 'react-responsive-carousel/lib/styles/carousel.min.css';
+/* @import '@ionic/react/css/ionicons.css'; */
 /* @import "./CustomCarousel.css"; */
 
 @tailwind base;
@@ -13,3 +14,17 @@
     padding-left: 15px;
     padding-right: 15px;
   }
+
+/* style for featuredOn component  */
+.marquee {
+  animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

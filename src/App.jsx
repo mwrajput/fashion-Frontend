@@ -10,6 +10,9 @@ import ImageSlider from "./components/Imslider/ImageSlider";
 import Strip from "./components/StripImg/Strip";
 import ImgSliderMen from "./components/ImgSliderMen/ImgSliderMen";
 import Pricing from "./components/pricingSlider/Pricing";
+import ShopTheLook from "./components/ShoptheLook/ShopTheLook";
+import FeaturedOn from "./components/FeaturedOn/FeaturedOn";
+
 
 const App = () => {
   return (
@@ -31,6 +34,8 @@ const App = () => {
           <ForMen data="Men" />
           <HeadingBB />
           <ImgSliderMen />
+          <ShopTheLook/>
+          <FeaturedOn/>
         </div>
       </main>
 
