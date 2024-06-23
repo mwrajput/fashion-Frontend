@@ -7,12 +7,11 @@ import FooterLinks from './components/Footer/FooterLinks';
 import ForMen from './components/Header/ForMen';
 import HeadingBB from './components/Header/HeadingBB';
 import ImageSlider from './components/Imslider/ImageSlider';
-<<<<<<< Updated upstream
 import Strip from './components/StripImg/Strip';
-=======
-import ImgSliderMen from "./components/ImgSliderMen/ImgSliderMen"
+import ImgSliderMen from "./components/ImgSliderMen/ImgSliderMen";
+import Pricing from './components/pricingSlider/Pricing';
 
->>>>>>> Stashed changes
+
 const App = () => {
   return (
     <>
@@ -25,14 +24,14 @@ const App = () => {
           <div className="container mb-14 mt-14 px-15">
                   <CustomCarousel />
                   <AddvertisePIc /> 
-                  <ForMen />
+                  <Pricing /> 
                   <Strip />
+                  <ForMen />
                   <HeadingBB />
                   <ImageSlider />
-                  {/* <ForMen props ="Men" /> */}
                   <ForMen data= "Men" />
-                  <HeadingBB />
                   <ImgSliderMen />
+                  <HeadingBB />
           </div>
         
         </main>
